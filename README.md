@@ -20,9 +20,20 @@
 
 <br/>
 
-[📦 Installation](#-installation) · [🔐 Session Setup](#-getting-your-session-id) · [⚙️ Configuration](#️-configuration) · [🚀 Deployment](#-deployment) · [🔌 Plugins](#-plugin-system)
+[📦 Installation](#-installation) · [🔐 Get Session ID](https://mega-pairing.onrender.com) · [⚙️ Configuration](#️-configuration) · [🚀 Deployment](#-deployment) · [🔌 Plugins](#-plugin-system)
 
 <br/>
+
+---
+
+### 🔑 Quick Start Links
+
+<a href="https://mega-pairing.onrender.com">
+  <img src="https://img.shields.io/badge/GET%20SESSION%20ID-00f2ff?style=for-the-badge&logo=render&logoColor=black" alt="Get Session ID" />
+</a>
+<a href="https://github.com/darkx-pro/Min-pro-bot/fork">
+  <img src="https://img.shields.io/badge/FORK%20REPO-FFD700?style=for-the-badge&logo=github-actions&logoColor=black" alt="Fork Repo" />
+</a>
 
 ---
 
@@ -52,23 +63,8 @@
 - [⚙️ Configuration](#️-configuration)
 - [📦 Installation](#-installation)
 - [🚀 Deployment](#-deployment)
-  - [📱 Termux](#-termux-android)
-  - [🖥️ VPS Linux Server](#-vps-linux-server)
-  - [🪟 Windows WSL](#-windows-wsl)
-  - [🔁 Replit](#-replit)
-  - [🟣 Heroku](#-heroku)
-  - [🎨 Render](#-render)
-  - [🚂 Railway](#-railway)
-  - [☁️ Koyeb](#-koyeb)
-  - [🪂 Fly.io](#-flyio)
-  - [🐳 Dockerfile](#-dockerfile)
-  - [🎮 Discord Panels](#-discord-panels-pterodactyl)
-- [🗄️ Storage Backends](#️-storage-backends)
-- [🛠️ Environment Variables](#️-environment-variables)
-- [📜 npm Scripts](#-npm-scripts)
 - [🔌 Plugin System](#-plugin-system)
 - [🔧 Troubleshooting](#-troubleshooting)
-- [🤝 Contributing](#-contributing)
 
 ---
 
@@ -76,13 +72,12 @@
 
 | | Feature | Description |
 |---|---|---|
-| 🔌 | **Auto-loading Plugins** | Drop a `.ts` file in `plugins/` — it loads automatically, zero registration |
-| 💬 | **250+ Commands** | Group management, privacy, moderation, fun, AI, media, utilities |
+| 🔌 | **Auto-loading Plugins** | Drop a `.ts` file in `plugins/` — it loads automatically |
+| 💬 | **250+ Commands** | Group management, privacy, moderation, fun, AI, media |
 | 🗄️ | **5 Storage Backends** | MongoDB, PostgreSQL, MySQL, SQLite, or JSON files |
-| 🛡 | **Group Protection** | Anti-spam, bad word filter, link detection, anti-tag abuse |
+| 🛡 | **Group Protection** | Anti-spam, bad word filter, link detection |
 | 👑 | **Role System** | Owner, Sudo, Admin, and User permission levels |
 | 🤖 | **AI Chatbot** | Per-chat AI conversation mode |
-| 📱 | **Multi-Platform** | Runs on Termux, VPS, Railway, Render, Heroku, Koyeb, Fly.io, Replit |
 
 ---
 
@@ -92,20 +87,26 @@
 |---|---|---|
 | ![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?logo=node.js&logoColor=white) | **20.x or higher** | Required |
 | ![npm](https://img.shields.io/badge/npm-8%2B-CB3837?logo=npm&logoColor=white) | 8.x or higher | Included with Node.js |
-| ![Git](https://img.shields.io/badge/Git-latest-F05032?logo=git&logoColor=white) | Any recent | For cloning |
 | ![ffmpeg](https://img.shields.io/badge/ffmpeg-latest-007808?logo=ffmpeg&logoColor=white) | Latest | Media processing |
-
-> [!WARNING]
-> **Never use your personal WhatsApp number for the bot.** Always use a dedicated number.
 
 ---
 
-## ⚡ Quick Start
+## 🔐 Getting Your Session ID
+
+Ili uweze kuendesha bot, unahitaji `SESSION_ID`. Unaweza kuipata kwa urahisi hapa:
+
+1. Fungua **[DarkX Session Generator](https://mega-pairing.onrender.com)**.
+2. Unganisha (Pair) na namba yako ya WhatsApp.
+3. Nakili code utakayopewa na uiweke kwenye `.env` yako kama `SESSION_ID`.
+
+---
+
+## ⚡ Quick Start (Local)
 
 ```bash
 git clone [https://github.com/darkx-pro/Min-pro-bot.git](https://github.com/darkx-pro/Min-pro-bot.git)
 cd Min-pro-bot
 npm install
 cp sample.env .env
-# Edit .env → add SESSION_ID and OWNER_NUMBER
+# Edit .env and add your SESSION_ID
 npm start
